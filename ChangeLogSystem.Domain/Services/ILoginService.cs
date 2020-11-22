@@ -2,7 +2,7 @@
 using ChangeLogSystem.Domain.Common;
 using ChangeLogSystem.Domain.Models;
 
-namespace ChangeLogSystem.Business.Services
+namespace ChangeLogSystem.Domain.Services
 {
     public interface ILoginService : IBaseService
     {

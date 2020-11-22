@@ -1,7 +1,5 @@
-﻿using ChangeLogSystem.Business.Services;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using ChangeLogSystem.Domain.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ChangeLogSystem.Domain.Common

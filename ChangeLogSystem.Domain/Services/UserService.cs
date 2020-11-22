@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
-using ChangeLogSystem.Business.Common;
-using ChangeLogSystem.Business.Models;
+using ChangeLogSystem.Domain.Common;
+using ChangeLogSystem.Domain.Models;
 using ChangeLogSystem.Data.Models;
+using ChangeLogSystem.Domain.Services;
 
 namespace ChangeLogSystem.Business.Services
 {

@@ -23,9 +23,7 @@ namespace ChangeLogSystem.Api.Controllers
         public async Task<IActionResult> Auth(LoginDTO model)
         {
             ILoginModel loginModel = ModelManager.Login;
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<LoginDTO, ILoginModel>());
-
-            config.CreateMapper();
+            Mapper.Map<LoginDTO, ILoginModel>(model, loginModel);
 
             bool isAuthenticated = await ServiceManager.LoginService.CheckLogin(loginModel);
 

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ChangeLogSystem.Business.Models;
+using ChangeLogSystem.Domain.Models;
 using ChangeLogSystem.Data.Models;
 using ChangeLogSystem.Shared;
 

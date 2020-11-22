@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
-using ChangeLogSystem.Business.Common;
-using ChangeLogSystem.Business.Models;
+using ChangeLogSystem.Domain.Common;
+using ChangeLogSystem.Domain.Models;
 using ChangeLogSystem.Data.Models;
 
-namespace ChangeLogSystem.Business.Services
+namespace ChangeLogSystem.Domain.Services
 {
     public class LoginService : BaseService, ILoginService
     {
@@ -16,7 +16,7 @@ namespace ChangeLogSystem.Business.Services
         public async Task<bool> CheckLogin(ILoginModel model)
         {
             var login = await RepositoryManager.LoginRepository
-                .FirstOrDefaultAsync(l => l.Username == model.Username && l.Password == model.Password);
+                .FirstOrDefaultAsync(l => l.UserName == model.Username && l.Password == model.Password);
 
             Mapper.Map<Login, ILoginModel>(login, model);
             return login != null;

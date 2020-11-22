@@ -22,9 +22,7 @@ namespace ChangeLogSystem.Api.Controllers
 
             var config = new MapperConfiguration(cfg => cfg.CreateMap<UserDTO, IUserModel>());
 
-            config.CreateMapper();
-
-            await ServiceManager.UserService.Save(userModel);
+            Mapper.Map<UserDTO, IUserModel>(model, userModel);
 
             ILoginModel loginModel = ModelManager.Login;
             loginModel.Username = userModel.Email;

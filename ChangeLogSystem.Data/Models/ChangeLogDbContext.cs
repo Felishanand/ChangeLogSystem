@@ -18,7 +18,7 @@ namespace ChangeLogSystem.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Document360;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ChangeLog;Integrated Security=True");
             }
         }
 
