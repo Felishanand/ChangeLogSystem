@@ -1,4 +1,4 @@
-﻿namespace ChangeLogSystem.Business.Models
+﻿namespace ChangeLogSystem.Domain.Models
 {
     public interface ILoginModel
     {

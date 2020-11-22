@@ -1,6 +1,6 @@
-﻿namespace ChangeLogSystem.Shared.Models
+﻿namespace ChangeLogSystem.Api.DTOs
 {
-    public class User
+    public class UserDTO
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

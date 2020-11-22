@@ -2,7 +2,7 @@
 
 namespace ChangeLogSystem.Shared
 {
-    public class ConnectionString
+    public class ConnectionStrings
     {
         public string ChangeLogDb { get; set; }
     }

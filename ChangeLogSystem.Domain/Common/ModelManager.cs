@@ -1,8 +1,6 @@
-﻿using ChangeLogSystem.Business.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using ChangeLogSystem.Domain.Models;
 
 namespace ChangeLogSystem.Domain.Common
 {

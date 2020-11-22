@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using ChangeLogSystem.Business.Common;
-using ChangeLogSystem.Business.Models;
+using ChangeLogSystem.Domain.Common;
+using ChangeLogSystem.Domain.Models;
 
 namespace ChangeLogSystem.Business.Services
 {
