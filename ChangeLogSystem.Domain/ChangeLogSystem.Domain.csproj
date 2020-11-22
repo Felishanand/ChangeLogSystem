@@ -10,4 +10,13 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChangeLogSystem.Data\ChangeLogSystem.Data.csproj" />
+    <ProjectReference Include="..\ChangeLogSystem.Shared\ChangeLogSystem.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
